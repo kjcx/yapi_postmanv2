@@ -1,0 +1,935 @@
+{
+	"info": {
+		"_postman_id": "e2748b8c-e4c2-4089-a10b-d7d70a7a1c59",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "好友",
+			"item": [
+				{
+					"name": "我的好友",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"OtherUserId\":\"3\"}"
+						},
+						"url": "{{URL}}/friend/FriendList"
+					},
+					"response": [
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "推荐好友",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": "{{URL}}/friend/RecommendFriends"
+					},
+					"response": [
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "关注好友",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"OtherUserId\":\"30\"}"
+						},
+						"url": "{{URL}}/friend/FriendFollow"
+					},
+					"response": [
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "取消关注好友",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"OtherUserId\":\"30\"}"
+						},
+						"url": "{{URL}}/friend/FriendUnFollow"
+					},
+					"response": [
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "发送消息",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Recipient\":\"2702\",\"ContentType\":\"text\",\"Content\":\"Content\"}\n{\"Recipient\":\"2702\",\"ContentType\":\"image\",\"Image\":\"http://www.baidu.com\"}\n{\"Recipient\":\"2702\",\"ContentType\":\"SharePost\",\"Content\":\"Content\",\"Image\":\"http://www.baidu.com\",\"PostId\":\"帖子id\"}"
+						},
+						"url": {
+							"raw": "ws://192.168.31.232:16001/ws?id=2701",
+							"protocol": "ws",
+							"host": [
+								"192",
+								"168",
+								"31",
+								"232"
+							],
+							"port": "16001",
+							"path": [
+								"ws"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2701"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "私“撩”列表",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Recipient\":\"2702\",\"ContentType\":\"text\",\"Content\":\"Content\"}\n{\"Recipient\":\"2702\",\"ContentType\":\"image\",\"Image\":\"http://www.baidu.com\"}\n{\"Recipient\":\"2702\",\"ContentType\":\"SharePost\",\"Content\":\"Content\",\"Image\":\"http://www.baidu.com\",\"PostId\":\"帖子id\"}"
+						},
+						"url": "{{URL}}/friend/FlirtMsgList"
+					},
+					"response": [
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "新粉丝",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Recipient\":\"2702\",\"ContentType\":\"text\",\"Content\":\"Content\"}\n{\"Recipient\":\"2702\",\"ContentType\":\"image\",\"Image\":\"http://www.baidu.com\"}\n{\"Recipient\":\"2702\",\"ContentType\":\"SharePost\",\"Content\":\"Content\",\"Image\":\"http://www.baidu.com\",\"PostId\":\"帖子id\"}"
+						},
+						"url": "{{URL}}/friend/FlirtMsgList"
+					},
+					"response": [
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "聊天\b\b历史记录",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Time\":0,\"FriendUserId\":2702,\"Count\":20}"
+						},
+						"url": "{{URL}}/friend/FriendChatMsgLog"
+					},
+					"response": [
+						{
+							"name": "聊天\b\b历史记录",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"Time\":0,\"FriendUserId\":2702,\"Count\":20}"
+								},
+								"url": "{{URL}}/friend/FriendChatMsgLog"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2019 07:54:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Datas\": [\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556249944,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556255622,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556255624,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556255624,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2702\",\n            \"Recipient\": \"2701\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556255635,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556265776,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556265797,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556266109,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556266174,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"科技创新-辽宁-男\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        }\n    ],\n    \"Code\": 0,\n    \"Message\": \"\",\n    \"Error\": \"\"\n}"
+						},
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "屏蔽/取消屏蔽消息",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"FriendUserId\":\"2702\",\"Type\":\"add\"}"
+						},
+						"url": "{{URL}}/friend/FriendMaskingMsg"
+					},
+					"response": [
+						{
+							"name": "聊天\b\b历史记录",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"Time\":0,\"FriendUserId\":2702,\"Count\":20}"
+								},
+								"url": "{{URL}}/friend/FriendChatMsgLog"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 29 Apr 2019 07:54:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Datas\": [\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556249944,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556255622,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556255624,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556255624,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2702\",\n            \"Recipient\": \"2701\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556255635,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556265776,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556265797,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556266109,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        },\n        {\n            \"Sender\": \"2701\",\n            \"Recipient\": \"2702\",\n            \"ContentType\": \"SharePost\",\n            \"Content\": \"Content\",\n            \"Time\": 1556266174,\n            \"Image\": \"http://www.baidu.com\",\n            \"PostId\": \"帖子id\",\n            \"MemberAvatar\": \"\",\n            \"UserName\": \"科技创新-辽宁-男\",\n            \"FuserName\": \"\",\n            \"Status\": 0,\n            \"UserMemberAvatar\": \"\",\n            \"FuserMemberAvatar\": \"\"\n        }\n    ],\n    \"Code\": 0,\n    \"Message\": \"\",\n    \"Error\": \"\"\n}"
+						},
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "按手机号\b搜索用户",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{key}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"Phone\":\"18502410651\"}"
+						},
+						"url": "{{URL}}/friend/FriendAdd"
+					},
+					"response": [
+						{
+							"name": "我的好友",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": "{{URL}}/friend/FriendList"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PATCH, PUT, DELETE"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2064"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 17 Apr 2019 07:56:13 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Code\": 200,\n    \"Message\": \"ok\",\n    \"Error\": \"\",\n    \"Datas\": {\n        \"FriendList\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFans\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ],\n        \"FriendFollows\": [\n            {\n                \"MemberId\": 3,\n                \"MemberNickname\": \"宸语说\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_3.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 30,\n                \"MemberNickname\": \"大海\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_30.jpg\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 2701,\n                \"MemberNickname\": \"科技创新\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_2701_38551.jpg\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 3836,\n                \"MemberNickname\": \"勇\",\n                \"MemberAvatar\": \"/data/upload/shop/common/default_user_portrait.gif\",\n                \"MemberProvinceid\": 4,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 11795,\n                \"MemberNickname\": \"....\",\n                \"MemberAvatar\": \"/data/upload/shop/avatar/avatar_11795_87040.jpg\",\n                \"MemberProvinceid\": 1,\n                \"MemberSex\": 1\n            },\n            {\n                \"MemberId\": 13406,\n                \"MemberNickname\": \"开心\",\n                \"MemberAvatar\": \"http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJeOZwicjtKoFPjq2lSxe9lOXLcYXLib8ic6gBlNvb2iaibeR1KlbV7ggiatZZZB8MicR7VypiclDPKqbldyg/132\",\n                \"MemberProvinceid\": 6,\n                \"MemberSex\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
